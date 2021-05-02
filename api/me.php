@@ -22,10 +22,10 @@ $res = array(
   'limit_ttl' => $limit_ttl,
   'quota' => $user_quota,
   'quota_ttl' => $user_quota_ttl,
-  'user_limit' => 10,
-  'user_limit_ttl' => 60,
-  'user_quota' => 1000,
-  'user_quota_ttl' => 86400
+  'user_limit' => 10000000,
+  'user_limit_ttl' => 10000000,
+  'user_quota' => 10000000,
+  'user_quota_ttl' => 10000000
 );
 echo json_encode($res);
 
