@@ -80,10 +80,10 @@ if (!$image && !isset($_GET['url']) && !isset($_FILES['image'])) {
     $final_result->RawDocsCount = 0;
     $final_result->CacheHit = false;
     $final_result->trial = 1;
-    $final_result->limit = 10;
-    $final_result->limit_ttl = 60;
-    $final_result->quota = 1000;
-    $final_result->quota_ttl = 86400;
+    $final_result->limit = 10000000;
+    $final_result->limit_ttl = 10000000;
+    $final_result->quota = 10000000;
+    $final_result->quota_ttl = 10000000;
     $final_result->RawDocsCount = intval($result->frameCount);
     $final_result->RawDocsSearchTime = 0;
     $final_result->ReRankSearchTime = 0;
